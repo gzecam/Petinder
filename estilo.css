@@ -1,4 +1,6 @@
+
 /*COMENTÁRIO*/ /* Estilização geral do site*/
+
 body{
     font-family:"Lucida Sans Unicode";
     margin: 0;
@@ -9,17 +11,31 @@ body{
     text-align: center;
 }
 
+
+
+
+
 /*Estilização do HEADER da página*/
+
 header{
     background-color: #f1eef5;
 }
 
+
+
+
 /*Estilização do LOGOTIPO*/
+
 .logo{
     width:8%;
 }
 
+
+
+
+
 /* Estilização do MENU*/
+
 nav{
     right: 15px;
     position: absolute;
@@ -56,11 +72,17 @@ nav a:hover{
 
 }
 
+
+
+
 /* Estilização do Banner */
 
 .banner { 
     width:  100%;
 }
+
+
+
 
 /* Estilização da seção sobre a empresa*/
 .logo {
@@ -89,6 +111,8 @@ float: left;
 
 
 
+
+
 /*Títulos - Padrão*/
 
 .titulo-padrao{
@@ -99,7 +123,12 @@ float: left;
     color: #ce1010ec;
 }
 
+
+
+
+
 /*Estilização da sessão Nosso estabelecimento (mapa)*/
+
 .mapa{
      background-color: #6A902B;
     background: linear-gradient(#FFFFFE, #6A902B);
@@ -119,8 +148,13 @@ float: left;
     margin: auto;
 }
 
+
+
+
+
 /*Estilização da Seção Benefícios*/
-.beneficios{
+
+.Beneficios{
      background-color: #6A902B;
 }
 
@@ -156,8 +190,94 @@ float: left;
 }
 
 .img_beneficios:hover{
-    opacity: 0.8;
+    opacity: 0.7;
 }
+
+.Interesses{
+    padding-top: 130px;
+    font-size: 20px;
+    text-align:center;
+    margin: 0px;
+    background-color: #6A902B;
+    background: linear-gradient(#FFFFFE, #6A902B);
+    padding-bottom: 10px;
+}
+
+.conteudo-interesses{
+    width:100%;
+}
+
+.lista-interesses{
+width: 100%;
+
+
+}
+
+
+.item{
+    text-align: center;
+    width: 30%;
+    vertical-align: center;
+    font-size: 22px;
+    list-style: none;
+    display: inline-block;
+    border-style:solid;
+    border-radius: 10%;
+    border-color: #ce1010ec;
+}
+
+
+@keyframes item
+{
+        0% { font-size: 26px; color:#ce1010ec; border-color: darkblue;}
+        80% { font-size: 30px; color:darkblue; border-color: deeppink;}
+        60% { font-size: 34px; color:deeppink; border-color: #ce1010ec;}
+}
+
+
+.item:hover{
+    
+    -webkit-animation: item .75s linear infinite;
+    -moz-animation: item .75s linear infinite;
+    -ms-animation: item .75s linear infinite;
+    -o-animation: item .75s linear infinite;
+    animation: item .75s linear infinite;
+    }
+
+
+
+.img_interesses{
+    width: 75%;
+    padding-bottom: 0px;
+
+
+ 
+}
+
+@keyframes img_interesses
+{
+        0% { opacity: 1; }
+        80% { opacity: 0.8; }
+        60% { opacity: 0.6; }
+}
+
+.img_interesses:hover {
+    -webkit-animation: img_interesses .75s linear infinite;
+    -moz-animation: img_interesses .75s linear infinite;
+    -ms-animation: img_interesses .75s linear infinite;
+    -o-animation: img_interesses .75s linear infinite;
+    animation: img_interesses .75s linear infinite;
+    
+    
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+
+
+
 
 
 /* Estilização do footer */
