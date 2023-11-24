@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script>
         alert("Este formulário deve ser preenchido se você deseja falar conosco");
+
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        data = new Date
+
     </script>
 </head>
 
@@ -19,7 +24,7 @@
             <img src="assets/imagens/logo.jpeg" title="Amor aos pets" class="logo"/>
             <nav>
                 <ul>
-                    <li><a href="J:\Meu Drive\Tecnologo em ADS\2° Semestre\Desenvolvimento Mobile (Luyra)\Site\index.html"target="_blank">Home</a></li>
+                    <li><a href="J:\Meu Drive\Tecnologo em ADS\2° Semestre\Desenvolvimento Mobile (Luyra)\Site\index.html">Home</a></li>
                     <li><a href="">Tutores</a></li>
                     <li><a href="">Pets</a></li>
                     <li><a href="">Canis</a></li>
@@ -36,14 +41,22 @@
             <ul class="contato-titulo">
                 <h1 class="titulo-padrao"> Contato</h1>
             </ul>
+            <p style = "text-align: right; margin-right: 20px; font-size: 15px;">
+            <script type = "text/javascript">
+                document.write (dia[data.getDay()] + ", " + data.getDate()+ " de " + mes[data.getMonth()] + " de " + data.getFullYear()+ ". ")
+            </script>
+            </p>
             <p class="contato_texto">
                 Preencha os campos abaixo com a sua dúvida, reclamação ou elogio e nossa equipe responderá o mais breve possível.
             </p>
             <p class="contato_texto">
                 Nosso horário de atendimento: Segunda à Sexta das 9hs às 18hs |
                 <a class="whatsapp-link" href="https://wa.me/55111119999" target="_blank">
-                <i class="fa fa-whatsapp"></i></a> (11) 4444-8888
+                <i class="fa fa-whatsapp"></i></a> (11) 94444-8888
             </p>
+
+           
+
             <form name="frmContato" method="get" action="mailto:teste@mail.com" target="_blank">
                 <fieldset class="titulos_forms">
                     <legend>Dados Pessoais</legend>

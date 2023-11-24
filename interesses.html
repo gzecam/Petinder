@@ -4,9 +4,28 @@
     <link rel="stylesheet" href="estilo.css">
     <link href="assets/imagens/logo.ico" rel = "shortcut icon"> <!-- Este comando coloca um icone na parte de cima da página-->
     <title>Petinder - Interesses</title>
+
+    <script>
+        var win = null;
+        function POP_Oferta(){
+            pagina = "promocao.html"
+            var left = (window.innerWidth-400)/2;
+            var top = (window.innerHeight-400)/2;
+            settings = 'toolbar = no , location = no , directories = no , status = no , menubar = no, width = 400 , height = 400, left='+left+', top='+top+', scrollbars = no, resizable = no, copyhistory = yes';
+            win = window.open( pagina, "ACESSE AGORA MESMO!", settings);
+        }
+
+        function Novidade(){
+            pagina="Novidade.html"
+            var left = (window.innerWidth-820)/2;
+            var top = (window.innerHeight-620)/2;
+            settings = 'toolbar=no , location=no , directories=no , status=no , menubar=no, width=820 , height=620, left='+left+', top='+top+', scrollbars=no, resizable=no, copyhistory=yes';
+            win = window.open(pagina,"Novidade", settings);
+        }
+    </script>
 </head>
 
-<body>
+<body onLoad = "JavaScript: POP_Oferta();">
     <header>
         <div class="logo_caixa">         
             <img src="assets/imagens/logo.jpeg" title="Amor aos pets" class="logo"/>
@@ -38,6 +57,9 @@
                     <li class="item">Cruzamento<img src="../Site/assets/imagens/cruzamento.jpg" alt="Cruzamento"  class="img_interesses"></li>
                     <li class="item">Encontro aleatório<img src="../Site/assets/imagens/passeios_aleatorios.jpeg" alt="Encontro aleatório"  class="img_interesses"></li>
                 </ul>
+            </div>
+            <div>
+                <a href="JavaScript: Novidade();"><img src ="assets/imagens/tem_novidade.png" class="novidade_slider"> </a>
             </div>
         </Section>  
     </main>
